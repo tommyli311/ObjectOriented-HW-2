@@ -1,11 +1,13 @@
 package edu.albany.hw2.car;
 
+//odometer class
 public class Odometer {
 
 	//constants for max mileage, and mpg for the vehicle
 	final int MAX_MILES = 999999;
-	final int MILES_PER_GALLON= 22;;
+	final int MILES_PER_GALLON= 22;
 	
+	//variable declaration for the initial amount of miles and current milage
 	int initialMiles;
 	int miles;
 
@@ -37,14 +39,13 @@ public void increaseMiles(){
 	{
 	miles=0;
 	}
-	}
+	
 
 /*if the number of miles drive divides evenly my mpg of the vehicle,
 one gallon of gas is decreased for every 22 miles driven.*/
-int NumOfMilesDriven = initialMiles- miles;
-{
+int NumOfMilesDriven = (initialMiles- miles);
 
-if(NumOfMilesDriven % MILES_PER_GALLON==0)
+if(NumOfMilesDriven % MILES_PER_GALLON == 0)
 {
 	fuelGauge.FuelConsumption();
 	}

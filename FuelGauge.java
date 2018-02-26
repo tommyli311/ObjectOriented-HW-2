@@ -2,8 +2,8 @@ package edu.albany.hw2.car;
 
 public class FuelGauge {
 
-	double MaxNumOfGallons=15;// max amount of gas car can hold
-	double NumOfGallons;// number of gallons of gas
+double MaxNumOfGallons=15;// max amount of gas car can hold
+double NumOfGallons;// number of gallons of gas
 	
 	//constructor, sets the initial amount of gas to zero gallons
 	public FuelGauge(){

@@ -1,14 +1,27 @@
 package edu.albany.hw2.car;
 
 public class CarSimulator {
-	 public static void main(String[] args){
-		 CarSimulator car = new CarSimulator();
+	public static void main(String[] args){
+	
+	double MaxNumOfGallons=15;
+	FuelGauge fuel= new FuelGauge();
+	Odometer odometer = new Odometer(0, fuel);
 		 
-		 FuelGauge fuel= car.new FuelGauge();
-		 Odometer odometer = car.new Odometer(0, f);
-		 
-		 for(int i=0; i< FuelGauge.MaxNumOfGallons)
-		 
+		 for(int i=0; i< MaxNumOfGallons;i++) {
+		  fuel.addGasToCar();
 	 }
 
+	while (fuel.getNumOfGallons()>0)
+	{
+		odometer.increaseMiles();
+		
+		System.out.println("Current Number of miles is " + odometer.getMiles());
+		
+		System.out.println("Amount of fuel is " + fuel.getNumOfGallons() + " gallons.");
+	}
+	
+
+	
+
+}
 }
