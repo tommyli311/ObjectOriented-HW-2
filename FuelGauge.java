@@ -14,7 +14,7 @@ double NumOfGallons;// number of gallons of gas
 	amount of gas, if it is the current amount of gas is equal
 	to the maximum amount of gas*/
 	
-	public FuelGauge(double NumOfGallons){
+	public void FuelGauge(double NumOfGallons){
 		if(NumOfGallons<=MaxNumOfGallons)
 			this.NumOfGallons= NumOfGallons;
 		
@@ -27,15 +27,15 @@ double NumOfGallons;// number of gallons of gas
 		return NumOfGallons;
 	}
 	
-	/*method that adds gas to car, if the amount of gas
-	is greater than the max number of gallons, message will be printed
+	/*method that adds gas to car by incrementing number of gallon if it is less than the
+	  max amount of gas, if the amount of gas is greater than the max number of gallons, message will be printed
 	stating tank is overfilled.*/
 	public void addGasToCar(){
 		if(NumOfGallons< MaxNumOfGallons)
 			NumOfGallons++;
 		
 		else{
-			System.out.println("Tank is Overfilled: TOO MUCH GAS!!");
+			System.out.println("TOO MUCH GAS!!");
 		}
 	}
 	
